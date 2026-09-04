@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-04T11:04:01+07:00",
+  "generatedAt": "2026-09-04T13:16:16+07:00",
   "android": {
-    "build": 65,
-    "version": "0.1.64",
-    "releaseUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/tag/v0.1.64",
-    "downloadUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/download/v0.1.64/HNDTV-v0.1.64-debug-20260904T003747Z-33822549008-1.apk",
-    "sha256": "5ae1a500854d6b7d00a4656c04ef2af48cf2412807d831fcb331ee8d302a85d9",
+    "build": 66,
+    "version": "0.1.65",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/tag/v0.1.65",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/download/v0.1.65/HNDTV-v0.1.65-debug-20260904T061251Z-33843422806-1.apk",
+    "sha256": "f9b9c3d53ef420f8f3ed9f8ede67d6e941051ac5baa0f4d60e9eefc22934d626",
     "mandatory": false,
     "changelog": [
-      "APK Android được phát hành công khai, không yêu cầu đăng nhập GitHub.",
-      "Kiểm tra cập nhật qua manifest nền tảng; chỉ tải APK sau khi người dùng chọn Cập nhật.",
-      "Giữ sắp xếp, loại trùng và fallback nhiều nguồn cho kênh."
+      "Bổ sung pipeline discovery IPTV quốc tế theo chế độ discovery-only, không tự công khai nguồn chưa được cấp quyền.",
+      "Health-check bằng ffprobe, lưu candidates/rejected/history và giữ last-known-good khi refresh lỗi tạm thời.",
+      "Workflow cập nhật IPTV chuyển sang chu kỳ 12 giờ và có bảo vệ tránh hai lượt refresh chạy chồng nhau."
     ]
   },
   "ios": {
