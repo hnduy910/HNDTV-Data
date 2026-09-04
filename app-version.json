@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-04T14:28:03.2460288Z",
+  "generatedAt": "2026-09-04T14:47:07.6334302Z",
   "android": {
     "build": 66,
     "version": "0.1.65",
@@ -26,14 +26,15 @@
     ]
   },
   "windows": {
-    "build": 17,
-    "version": "0.1.15",
-    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.15-build17",
-    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.15-build17/HNDTV-Windows-v0.1.15-build17-x64.zip",
-    "sha256": "a3bf485817779e9441430ee46fc07f72b056464e4caf0fd972201bad6232317c",
+    "build": 18,
+    "version": "0.1.16",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.16-build18",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.16-build18/HNDTV-Windows-v0.1.16-build18-x64.zip",
+    "sha256": "867057b773d6ded897945a4e3d0c3e164fee43c3f36691cdd1b5da87577eb88b",
     "mandatory": false,
     "changelog": [
-      "Tự động chọn và mở VTV1 khi shared channels.json có dữ liệu hợp lệ.",
+      "Nạp hai playlist HTTPS HNDTV và All-In-One-IPTV đã cấu hình cho bản Windows.",
+      "Tự động chọn và mở VTV1 khi playlist hoặc shared channels.json có dữ liệu hợp lệ.",
       "Sắp xếp danh sách theo cùng thứ tự nhóm và sắp xếp tự nhiên như Android/iOS.",
       "Thêm nút bật/tắt toàn màn hình cho khu vực phát.",
       "Dùng biểu tượng HNDtv thống nhất với Android.",
