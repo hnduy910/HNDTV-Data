@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-04T13:16:16+07:00",
+  "generatedAt": "2026-09-04T12:09:38.2436817Z",
   "android": {
     "build": 66,
     "version": "0.1.65",
@@ -23,6 +23,19 @@
       "Cache-first cho channels.json và last-known-good fallback.",
       "Refresh nền không làm gián đoạn player.",
       "Thông báo cập nhật không tự tải hoặc tự cài IPA."
+    ]
+  },
+  "windows": {
+    "build": 6,
+    "version": "0.1.4",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.4-build6",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.4-build6/HNDTV-Windows-v0.1.4-build6-x64.zip",
+    "sha256": "9550984c8b97e5f244dfd7d0b1891feab1c1a17434a78d8156ade4e17640c169",
+    "mandatory": false,
+    "changelog": [
+      "Bản Windows native WinUI 3 / .NET 8 đầu tiên.",
+      "Dùng chung channels.json với Android và iOS.",
+      "Cache-first, last-known-good, bundled fallback và multi-source failover."
     ]
   }
 }
