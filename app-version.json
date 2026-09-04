@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-09-04T07:04:04+07:00",
+  "ios": {
+    "build": 67,
+    "version": "0.1.66",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-iOS-Releases/releases/download/v0.1.66-build67/HNDTViOS-v0.1.66-build67-unsigned.ipa",
+    "mandatory": false,
+    "changelog": [
+      "Cache-first cho channels.json và last-known-good fallback.",
+      "Refresh nền không làm gián đoạn player.",
+      "Thông báo cập nhật không tự tải hoặc tự cài IPA."
+    ]
+  }
+}
