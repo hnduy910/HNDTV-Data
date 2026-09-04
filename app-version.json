@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-04T14:56:00Z",
+  "generatedAt": "2026-09-04T15:11:31.0730470Z",
   "android": {
     "build": 67,
     "version": "0.1.66",
@@ -26,13 +26,15 @@
     ]
   },
   "windows": {
-    "build": 19,
-    "version": "0.1.17",
-    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.17-build19",
-    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.17-build19/HNDTV-Windows-v0.1.17-build19-x64.zip",
-    "sha256": "bb80e98caa2563b5c425f39c554c1a13d3d6bf94a688c81636014a6801e79bdc",
+    "build": 20,
+    "version": "0.1.18",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.18-build20",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.18-build20/HNDTV-Windows-v0.1.18-build20-x64.zip",
+    "sha256": "25dbe7b8559d7c26349d439531a51afbe5b9a3c934cf0ac12f7296d43e172b5d",
     "mandatory": false,
     "changelog": [
+      "Dùng MediaPlayerElement tự quản lý player và nguồn HLS để tránh lỗi native khi bấm Phát hoặc đúp vào kênh trên một số máy Windows.",
+      "Chặn yêu cầu phát trùng hoặc chồng nhau khi người dùng bấm nhanh nhiều lần.",
       "Không tự khởi tạo MediaPlayer khi app vừa mở; chọn kênh trước và bấm Phát để tránh văng native trên một số máy Windows.",
       "Nạp hai playlist HTTPS HNDTV và All-In-One-IPTV đã cấu hình cho bản Windows.",
       "Tự động chọn và mở VTV1 khi playlist hoặc shared channels.json có dữ liệu hợp lệ.",
