@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-04T22:14:21.7663597Z",
+  "generatedAt": "2026-09-04T22:22:27.8095008Z",
   "android": {
     "build": 68,
     "version": "0.1.67",
@@ -26,14 +26,16 @@
     ]
   },
   "windows": {
-    "build": 25,
-    "version": "0.1.23",
-    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.23-build25",
-    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.23-build25/HNDTV-Windows-v0.1.23-build25-x64.zip",
-    "sha256": "146e86a5fd6ed196e15d6d5a924165fd239b0e07dae31ddae1d069969ac63477",
+    "build": 26,
+    "version": "0.1.24",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.24-build26",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.24-build26/HNDTV-Windows-v0.1.24-build26-x64.zip",
+    "sha256": "ce0aa6bd97823a7af010ee603d5b63ffa80405d4466852458f5cd480caefe2f1",
     "mandatory": false,
     "changelog": [
-      "Bổ sung 3 dòng thông tin ở góc trên trái: phiên bản/build, ngày build và tác giả Hoàng Ngọc Duy.",
+      "Ẩn hoàn toàn nhãn Esc khỏi giao diện; vẫn giữ phím Esc để thoát toàn màn hình.",
+      "Bổ sung dòng email tác giả trong thông tin ứng dụng.",
+      "Bổ sung 4 dòng thông tin ở góc trên trái: phiên bản/build, ngày build, tác giả và email.",
       "Nút fullscreen dùng biểu tượng tương phản, nằm cao ở góc vùng phát và chỉ hiện tạm khi người dùng bấm vào màn hình.",
       "Đúp vào vùng phát để bật hoặc thoát toàn màn hình; không còn hiện chữ Esc hoặc lớp phủ thừa trên hình.",
       "Thanh kéo trên cùng dùng cơ chế kéo cửa sổ native nhẹ, ổn định khi app khởi động.",
