@@ -1,6 +1,19 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-04T07:04:04+07:00",
+  "generatedAt": "2026-09-04T11:04:01+07:00",
+  "android": {
+    "build": 65,
+    "version": "0.1.64",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/tag/v0.1.64",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/download/v0.1.64/HNDTV-v0.1.64-debug-20260904T003747Z-33822549008-1.apk",
+    "sha256": "5ae1a500854d6b7d00a4656c04ef2af48cf2412807d831fcb331ee8d302a85d9",
+    "mandatory": false,
+    "changelog": [
+      "APK Android được phát hành công khai, không yêu cầu đăng nhập GitHub.",
+      "Kiểm tra cập nhật qua manifest nền tảng; chỉ tải APK sau khi người dùng chọn Cập nhật.",
+      "Giữ sắp xếp, loại trùng và fallback nhiều nguồn cho kênh."
+    ]
+  },
   "ios": {
     "build": 67,
     "version": "0.1.66",
