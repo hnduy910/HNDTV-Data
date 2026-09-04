@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-04T15:26:29Z",
+  "generatedAt": "2026-09-04T21:35:29.1227870Z",
   "android": {
     "build": 68,
     "version": "0.1.67",
@@ -26,13 +26,16 @@
     ]
   },
   "windows": {
-    "build": 20,
-    "version": "0.1.18",
-    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.18-build20",
-    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.18-build20/HNDTV-Windows-v0.1.18-build20-x64.zip",
-    "sha256": "25dbe7b8559d7c26349d439531a51afbe5b9a3c934cf0ac12f7296d43e172b5d",
+    "build": 21,
+    "version": "0.1.19",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.19-build21",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.19-build21/HNDTV-Windows-v0.1.19-build21-x64.zip",
+    "sha256": "2d1f34b8bcba5c9b20d4c6563f8c3b19d3773f6a9d7926fbf4d55de5ba1788be",
     "mandatory": false,
     "changelog": [
+      "Toàn màn hình mở rộng vùng video, ẩn toàn bộ danh sách kênh và các lớp phủ; Esc để thoát, F11 để bật/tắt.",
+      "Dùng phím mũi tên để chuyển kênh trước/sau theo đúng thứ tự danh sách.",
+      "Bỏ dòng Đang khởi tạo trình phát khỏi vùng hình ảnh khi đang phát.",
       "Dùng MediaPlayerElement tự quản lý player và nguồn HLS để tránh lỗi native khi bấm Phát hoặc đúp vào kênh trên một số máy Windows.",
       "Chặn yêu cầu phát trùng hoặc chồng nhau khi người dùng bấm nhanh nhiều lần.",
       "Không tự khởi tạo MediaPlayer khi app vừa mở; chọn kênh trước và bấm Phát để tránh văng native trên một số máy Windows.",
