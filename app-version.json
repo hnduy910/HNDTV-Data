@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-09-04T14:53:00Z",
+  "android": {
+    "build": 67,
+    "version": "0.1.66",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/tag/v0.1.66",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/download/v0.1.66/HNDTV-v0.1.66-debug-20260904T144950Z-33885961551-1.apk",
+    "sha256": "5f1a4b7081b6205579e09fa4d3c5ec23bf587a5dc8d6d674b0261c20c8964f6a",
+    "mandatory": false,
+    "changelog": [
+      "Android đọc toàn bộ playlist đã parse từ cache cục bộ ngay khi mở app.",
+      "Health-check cập nhật trạng thái nguồn nhưng không làm mất kênh hoặc nguồn dự phòng do lỗi tạm thời.",
+      "Giữ cơ chế gộp kênh trùng và failover khi phát."
+    ]
+  },
+  "ios": {
+    "build": 67,
+    "version": "0.1.66",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-iOS-Releases/releases/download/v0.1.66-build67/HNDTViOS-v0.1.66-build67-unsigned.ipa",
+    "mandatory": false,
+    "changelog": [
+      "Cache-first cho channels.json và last-known-good fallback.",
+      "Refresh nền không làm gián đoạn player.",
+      "Thông báo cập nhật không tự tải hoặc tự cài IPA."
+    ]
+  },
+  "windows": {
+    "build": 18,
+    "version": "0.1.16",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.16-build18",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.16-build18/HNDTV-Windows-v0.1.16-build18-x64.zip",
+    "sha256": "867057b773d6ded897945a4e3d0c3e164fee43c3f36691cdd1b5da87577eb88b",
+    "mandatory": false,
+    "changelog": [
+      "Nạp hai playlist HTTPS HNDTV và All-In-One-IPTV đã cấu hình cho bản Windows.",
+      "Tự động chọn và mở VTV1 khi playlist hoặc shared channels.json có dữ liệu hợp lệ.",
+      "Sắp xếp danh sách theo cùng thứ tự nhóm và sắp xếp tự nhiên như Android/iOS.",
+      "Thêm nút bật/tắt toàn màn hình cho khu vực phát.",
+      "Dùng biểu tượng HNDtv thống nhất với Android.",
+      "Giữ nút thử tải lại khi backend chưa có kênh production được phê duyệt.",
+      "Giữ nguyên gate runtime, extracted ZIP và public-download verification."
+    ]
+  }
+}
