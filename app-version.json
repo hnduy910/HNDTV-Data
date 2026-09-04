@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-04T21:58:57.5929270Z",
+  "generatedAt": "2026-09-04T22:14:21.7663597Z",
   "android": {
     "build": 68,
     "version": "0.1.67",
@@ -26,13 +26,14 @@
     ]
   },
   "windows": {
-    "build": 24,
-    "version": "0.1.22",
-    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.22-build24",
-    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.22-build24/HNDTV-Windows-v0.1.22-build24-x64.zip",
-    "sha256": "9411fa0701cbe1191d9abd8d9c4e4f2d238934168ab14a0410e5f76f83354824",
+    "build": 25,
+    "version": "0.1.23",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.23-build25",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.23-build25/HNDTV-Windows-v0.1.23-build25-x64.zip",
+    "sha256": "146e86a5fd6ed196e15d6d5a924165fd239b0e07dae31ddae1d069969ac63477",
     "mandatory": false,
     "changelog": [
+      "Bổ sung 3 dòng thông tin ở góc trên trái: phiên bản/build, ngày build và tác giả Hoàng Ngọc Duy.",
       "Nút fullscreen dùng biểu tượng tương phản, nằm cao ở góc vùng phát và chỉ hiện tạm khi người dùng bấm vào màn hình.",
       "Đúp vào vùng phát để bật hoặc thoát toàn màn hình; không còn hiện chữ Esc hoặc lớp phủ thừa trên hình.",
       "Thanh kéo trên cùng dùng cơ chế kéo cửa sổ native nhẹ, ổn định khi app khởi động.",
