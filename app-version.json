@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-04T15:11:31.0730470Z",
+  "generatedAt": "2026-09-04T15:26:29Z",
   "android": {
-    "build": 67,
-    "version": "0.1.66",
-    "releaseUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/tag/v0.1.66",
-    "downloadUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/download/v0.1.66/HNDTV-v0.1.66-debug-20260904T144950Z-33885961551-1.apk",
-    "sha256": "5f1a4b7081b6205579e09fa4d3c5ec23bf587a5dc8d6d674b0261c20c8964f6a",
+    "build": 68,
+    "version": "0.1.67",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/tag/v0.1.67",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Android-Releases/releases/download/v0.1.67/HNDTV-v0.1.67-debug-20260904T152629Z-33889455559-1.apk",
+    "sha256": "ccfee8c10d159ec570b41e7d902de452280859c31738b6474e1862301229b0a0",
     "mandatory": false,
     "changelog": [
-      "Android đọc toàn bộ playlist đã parse từ cache cục bộ ngay khi mở app.",
-      "Health-check cập nhật trạng thái nguồn nhưng không làm mất kênh hoặc nguồn dự phòng do lỗi tạm thời.",
-      "Giữ cơ chế gộp kênh trùng và failover khi phát."
+      "Giữ đủ catalog và toàn bộ URL dự phòng; nguồn đã kiểm tra sống được ưu tiên phát trước.",
+      "Sửa timeout health-check để nguồn tạm thời không bị loại khỏi danh sách và vẫn được thử lại khi phát.",
+      "Cải thiện Media3 HLS/DASH với HTTP data source, redirect hợp lệ và nhận dạng MIME rõ ràng; sửa thứ tự VTV6, VTV9, VTV10."
     ]
   },
   "ios": {
