@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-04T14:09:06.4786002Z",
+  "generatedAt": "2026-09-04T14:28:03.2460288Z",
   "android": {
     "build": 66,
     "version": "0.1.65",
@@ -26,15 +26,18 @@
     ]
   },
   "windows": {
-    "build": 16,
-    "version": "0.1.13",
-    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.13-build16",
-    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.13-build16/HNDTV-Windows-v0.1.13-build16-x64.zip",
-    "sha256": "59cb1c953d456662b6781040f0dfb2abe8a547575870525d4cebbfa029514c02",
+    "build": 17,
+    "version": "0.1.15",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/tag/v0.1.15-build17",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-Windows-Releases/releases/download/v0.1.15-build17/HNDTV-Windows-v0.1.15-build17-x64.zip",
+    "sha256": "a3bf485817779e9441430ee46fc07f72b056464e4caf0fd972201bad6232317c",
     "mandatory": false,
     "changelog": [
-      "Hiển thị rõ trạng thái khi backend chưa có kênh production được phê duyệt.",
-      "Cho phép thử tải lại shared channels.json khi backend sẵn sàng.",
+      "Tự động chọn và mở VTV1 khi shared channels.json có dữ liệu hợp lệ.",
+      "Sắp xếp danh sách theo cùng thứ tự nhóm và sắp xếp tự nhiên như Android/iOS.",
+      "Thêm nút bật/tắt toàn màn hình cho khu vực phát.",
+      "Dùng biểu tượng HNDtv thống nhất với Android.",
+      "Giữ nút thử tải lại khi backend chưa có kênh production được phê duyệt.",
       "Giữ nguyên gate runtime, extracted ZIP và public-download verification."
     ]
   }
