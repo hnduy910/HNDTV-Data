@@ -15,11 +15,14 @@
     ]
   },
   "ios": {
-    "build": 67,
-    "version": "0.1.66",
-    "downloadUrl": "https://github.com/hnduy910/HNDTV-iOS-Releases/releases/download/v0.1.66-build67/HNDTViOS-v0.1.66-build67-unsigned.ipa",
+    "build": 68,
+    "version": "0.1.67",
+    "releaseUrl": "https://github.com/hnduy910/HNDTV-iOS-Releases/releases/tag/v0.1.67-build68",
+    "downloadUrl": "https://github.com/hnduy910/HNDTV-iOS-Releases/releases/download/v0.1.67-build68/HNDTViOS-v0.1.67-build68-unsigned.ipa",
+    "sha256": "0465764911eb4dfda8421a6a6c9a9f14d916eb0dc79f3fb9d335bc67a5da1c0c",
     "mandatory": false,
     "changelog": [
+      "Bổ sung hỗ trợ channels[].order từ manifest dùng chung; manifest cũ không có order vẫn dùng thứ tự fallback.",
       "Cache-first cho channels.json và last-known-good fallback.",
       "Refresh nền không làm gián đoạn player.",
       "Thông báo cập nhật không tự tải hoặc tự cài IPA."
