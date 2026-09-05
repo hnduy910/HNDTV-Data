@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-05T10:06:58Z",
+  "generatedAt": "2026-09-05T10:10:52Z",
   "appendOnly": true,
-  "oldUniqueUrlCount": 0,
+  "oldUniqueUrlCount": 259,
   "sourceCount": 0,
   "candidateCount": 0,
   "candidateVietnamese": 0,
@@ -16,6 +16,6 @@
   "unauthorizedSkipped": 0,
   "probeFailed": 0,
   "oldUrlRemoved": 0,
-  "totalUniqueUrlCount": 0,
+  "totalUniqueUrlCount": 259,
   "sources": []
 }

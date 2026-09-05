@@ -64,21 +64,21 @@ class PlaylistEntry:
 
     @property
     def group(self) -> str:
-        return self.attrs.get("group-title", "Khác").strip() or "Khác"
+        return str(self.attrs.get("group-title") or "Khác").strip() or "Khác"
 
     @property
     def logo(self) -> str | None:
-        value = self.attrs.get("tvg-logo", "").strip()
+        value = str(self.attrs.get("tvg-logo") or "").strip()
         return value or None
 
     @property
     def tvg_id(self) -> str | None:
-        value = self.attrs.get("tvg-id", "").strip()
+        value = str(self.attrs.get("tvg-id") or "").strip()
         return value or None
 
     @property
     def epg_id(self) -> str | None:
-        value = self.attrs.get("epg-id", "").strip()
+        value = str(self.attrs.get("epg-id") or "").strip()
         return value or None
 
     def render(self) -> str:
@@ -94,14 +94,14 @@ def parse_attributes(line: str) -> dict[str, str]:
     result: dict[str, str] = {}
     for match in ATTR_RE.finditer(line):
         key = match.group(1) or match.group(3)
-        value = match.group(2) or match.group(4)
+        value = match.group(2) if match.group(2) is not None else match.group(4)
         result[key] = value
     return result
 
 
 def info_name(info_line: str, attrs: dict[str, str]) -> str:
     value = info_line.rsplit(",", 1)[-1].strip() if "," in info_line else ""
-    return value or attrs.get("tvg-name", "Kênh").strip() or "Kênh"
+    return value or str(attrs.get("tvg-name") or "Kênh").strip() or "Kênh"
 
 
 def parse_m3u(text: str, source_id: str = "existing", priority: int = 0) -> list[PlaylistEntry]:
@@ -333,7 +333,7 @@ def atomic_write_json(path: Path, value: dict) -> None:
 
 def validate_m3u(text: str) -> None:
     lines = text.splitlines()
-    if not lines or lines[0].strip() != "#EXTM3U":
+    if not lines or not lines[0].strip().casefold().startswith("#extm3u"):
         raise ValueError("M3U must start with #EXTM3U")
     entries = parse_m3u(text)
     for entry in entries:
@@ -780,7 +780,9 @@ class AppendOnlyPipeline:
         # partially updated data snapshot.
         if write and appended:
             atomic_write(self.m3u_path, new_text)
-        if write and (appended or (not self.manifest_path.is_file() and manifest["channels"])):
+        previous_channels = (previous_manifest or {}).get("channels", [])
+        manifest_needs_initialisation = bool(manifest["channels"]) and not previous_channels
+        if write and (appended or manifest_needs_initialisation or not self.manifest_path.is_file()):
             atomic_write_json(self.manifest_path, manifest)
 
         report = {

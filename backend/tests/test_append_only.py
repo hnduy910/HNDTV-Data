@@ -164,11 +164,12 @@ class AppendOnlyPipelineTests(unittest.TestCase):
             block("VTV1", "https://old.example/vtv1.m3u8", tvg_id="VTV1"),
             block("VTV2", "https://old.example/vtv2.m3u8", tvg_id="VTV2"),
         )
-        report, result, _ = self.run_pipeline(old, "#EXTM3U\n")
+        report, result, manifest = self.run_pipeline(old, "#EXTM3U\n")
         self.assertEqual(result, old)
         self.assertEqual(report["candidateCount"], 0)
         self.assertEqual(report["oldUniqueUrlCount"], report["totalUniqueUrlCount"])
         self.assertEqual(report["oldUrlRemoved"], 0)
+        self.assertEqual(len(manifest["channels"]), 2)
 
     def test_manifest_uses_ios_group_order_natural_numbers_and_one_channel_tile(self):
         entries = playlist(
