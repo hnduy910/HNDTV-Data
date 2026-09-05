@@ -40,6 +40,11 @@ If no upstream has documented public redistribution permission, the publisher
 leaves the public data unchanged. The app then uses its cached or bundled
 manifest instead.
 
+Until an approved source produces a validated snapshot, `channels.json` stays
+an empty sentinel and `hndtv.m3u` contains only `#EXTM3U`. This prevents an
+old, unverified or dead stream from being mistaken for current production
+data.
+
 The private HNDTV repository publishes through GitHub Actions using the minimum
 cross-repository secret required by the workflow: `HNDTV_DATA_TOKEN`. The
 secret must be configured in `hnduy910/HNDTV`; it is never committed here.
