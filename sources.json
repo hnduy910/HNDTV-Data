@@ -1,6 +1,12 @@
 {
-  "schema": 1,
-  "generatedBy": "hnduy910/HNDTV",
-  "publicationPolicy": "No stream is published until its upstream is explicitly approved for public redistribution.",
+  "schema": 2,
+  "generatedBy": "hnduy910/HNDTV-Data append-only updater",
+  "publicationPolicy": "Existing hndtv.m3u URLs are never pruned. New streams require explicit public redistribution permission, scope approval, and a passing playback probe.",
+  "pipeline": {
+    "mode": "append-only",
+    "schedule": "17 */12 * * *",
+    "oldUrlPruning": false,
+    "newCandidatesOnlyHealthCheck": true
+  },
   "upstreams": []
 }

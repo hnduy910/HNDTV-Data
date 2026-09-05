@@ -1,0 +1,45 @@
+name: Append community IPTV data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */12 * * *"
+
+concurrency:
+  group: hndtv-data-append-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out data repository
+        uses: actions/checkout@v4
+
+      - name: Install ffprobe
+        run: sudo apt-get update && sudo apt-get install --no-install-recommends -y ffmpeg
+
+      - name: Run append-only regression tests
+        run: python3 -B -m unittest discover -s backend/tests -v
+
+      - name: Discover and append eligible sources
+        run: python3 -B backend/update_data.py
+
+      - name: Re-run regression tests after update
+        run: python3 -B -m unittest discover -s backend/tests -v
+
+      - name: Commit validated snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hndtv.m3u channels.json refresh-status.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "chore(data): append validated community sources"
+          git push
